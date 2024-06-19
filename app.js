@@ -36,6 +36,10 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.json("Hello");
+});
+
 app.use(
   fileUpload({
     createParentPath: true,

@@ -28,7 +28,13 @@ mongoose
     console.log("Что-то пошло не так");
   });
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["bookfllow-api.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
 
 app.use(
   fileUpload({

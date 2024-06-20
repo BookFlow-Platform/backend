@@ -14,3 +14,7 @@
 
 `npm run start` - запуск сервера <br>
 `npm run dev` - запуск сервера с горячей перезагрузкой <br>
+
+Деплой серверной части:
+
+https://bookflow-api.vercel.app
